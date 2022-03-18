@@ -346,7 +346,6 @@ def newsletter():
 
     return render_template("newsletter.html")
 
-
 def subscribe_user(email, user_group_email, api_key):
 
     resp = requests.post(f"https://api.mailgun.net/v3/lists/{user_group_email}/members",
