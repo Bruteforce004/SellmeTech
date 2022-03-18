@@ -30,6 +30,7 @@ from user import User2
 from flask_wtf import FlaskForm
 from wtforms import StringField,PasswordField,SubmitField,BooleanField
 from wtforms.validators import DataRequired,Email,EqualTo
+from email_validator import validate_email,EmailNotValidError
 
 # Configuration
 GOOGLE_CLIENT_ID = "755960925170-ittebt844scr9v19617vqmf64b1a403c.apps.googleusercontent.com"
@@ -147,7 +148,7 @@ def login():
                 id_="12345", name="admin", email="admin@gmail.com", profile_pic="placeholder"
             )
             if not User.get("12345"):
-                User.create("12345", "admin", "admin@gmail.com", "https://vignette.wikia.nocookie.net/fan-fiction-library/images/1/15/Admin.png/revision/latest?cb=20140917130743")
+                User.create("12345", "admin", "admin@gmail.com", "https://www.pinclipart.com/picdir/middle/331-3316988_check-mark-box-clip-art-admin-blue-icon.png")
 
             # Begin user session by logging the user in
             login_user(user)
@@ -236,7 +237,7 @@ def logout():
 def register():
     if request.method == "POST":
         uname=request.form["username"]
-        email=request.form["email"]
+        email=request.form["email"]        
         password1=request.form["password"]
         password2=request.form["confirm_password"]
         if request.form["profile_pic"]=="":
