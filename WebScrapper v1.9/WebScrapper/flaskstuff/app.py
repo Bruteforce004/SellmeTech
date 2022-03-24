@@ -144,10 +144,10 @@ def login():
             global flag
             flag = 0
             user = User(
-                id_="12345", name="admin", email="admin@gmail.com", profile_pic="placeholder"
+                id_="12345", name="admin", email="admin@gmail.com", profile_pic="https://www.pinclipart.com/picdir/middle/331-3316988_check-mark-box-clip-art-admin-blue-icon.png"
             )
             if not User.get("12345"):
-                User.create("12345", "admin", "admin@gmail.com", "https://vignette.wikia.nocookie.net/fan-fiction-library/images/1/15/Admin.png/revision/latest?cb=20140917130743")
+                User.create("12345", "admin@gmail.com", "admin@gmail.com", "https://vignette.wikia.nocookie.net/fan-fiction-library/images/1/15/Admin.png/revision/latest?cb=20140917130743")
 
             # Begin user session by logging the user in
             login_user(user)
@@ -318,9 +318,9 @@ def resultsPage(search_stringss):
         except:
             pass
 
-# @app.errorhandler(404)
-# def error404(error):
-#     return render_template("error.html")
+@app.errorhandler(404)
+def error404(error):
+    return render_template("error.html")
 
 @app.route("/news/<page>", methods=["POST", "GET"])
 def tech_news(page):

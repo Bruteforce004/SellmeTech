@@ -1,222 +1,149 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-  <!-- Basic -->
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <!-- Mobile Metas -->
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <!-- Site Metas -->
-  <meta name="keywords" content="" />
-  <meta name="description" content="" />
-  <meta name="author" content="" />
-  <link rel="shortcut icon" href="images/favicon.png" type="">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="shortcut icon" href="images/favicon.png" type="">
 
-  <title> Sell me cell </title>
+    <title> About us </title>
 
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='bootstrap.css') }}" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-  <!-- bootstrap core css -->
-  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='bootstrap.css') }}" />
+    <link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet" />
+    <link href="{{ url_for('static', filename='style1.css') }}" rel="stylesheet" />
+    <link href="{{ url_for('static', filename='style2.css') }}" rel="stylesheet" />
 
-  <!--owl slider stylesheet -->
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link href="{{ url_for('static', filename='responsive.css') }}" rel="stylesheet" />
 
-  <!-- font awesome style -->
-  <!-- <link href="{{ url_for('static', filename='font-awesome.min.css') }}" rel="stylesheet" /> -->
-  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </head>
 
-  <!-- Custom styles for this template -->
-  <link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet" />
-  <!-- responsive style -->
-  <link href="{{ url_for('static', filename='responsive.css') }}" rel="stylesheet" />
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='bootstrap.css') }}" />
+  <body>
 
-  <!--owl slider stylesheet -->
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
-
-  <!-- font awesome style -->
-  <link href="{{ url_for('static', filename='font-awesome.min.css') }}" rel="stylesheet" />
-
-  <!-- Custom styles for this template -->
-  <link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet" />
-  <!-- <link href="{{ url_for('static', filename='style2.css') }}" rel="stylesheet" /> -->
-  <!-- responsive style -->
-  <link href="{{ url_for('static', filename='responsive.css') }}" rel="stylesheet" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <link rel="stylesheet" href="{{ url_for('static', filename='style2.css') }}" >
-</head>
-
-<body>
-
-  <div class="hero_area">
-    <div class="hero_bg_box">
-      <img src="https://image.freepik.com/free-vector/people-with-technology-devices_52683-34717.jpg" alt="">
-    </div>
-    <!-- header section strats -->
-    <header class="header_section">
-      <div class="container rounded-pill" id="bg2">
-        <nav class="navbar navbar-expand-lg custom_nav-container ">
-          <a class="navbar-brand" style="margin: 10px;" href="{{url_for('home')}}">
-            <span>
-              Sell me cell
-            </span>
-          </a>
-
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class=""> </span>
-          </button>
-
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav">             
-              <li class="nav-item" style="margin-left: 100px; padding-top: 25px;">
-                <a class="nav-link" href="{{url_for('index')}}">Home <span class="sr-only"></span></a>
-              </li>
-            <li class="nav-item" style="padding-top: 25px;">
-                <a class="nav-link" href="{{url_for('about')}}"> About us</a>
-              </li>
-              <li class="nav-item" style="padding-top: 25px;">
-                <a class="nav-link" href="{{url_for('contact')}}">Contact</a>
-              </li>
-              <li class="nav-item" style="padding-top: 25px;">
-                <a class="nav-link" href="{{url_for('howtouse')}}">How to use</a>
-              </li>
-              <li class="nav-item" style="padding-top: 25px;">
-                <a class="nav-link" href="{{url_for('userpage')}}">logged in as {{current_user.name}}</a>
-              </li>
-              <li>
-                <a class="nav-link" href="{{url_for('userpage')}}"><img src="{{current_user.profile_pic}}" style="border-radius: 50%; width:75px;"></a>
-              </li>
-            </ul>
-          </div>
-        </nav>
+    <div class="hero_area">
+      <div class="hero_bg_box">
+        <img src="https://image.freepik.com/free-vector/people-with-technology-devices_52683-34717.jpg" alt="">
       </div>
-    </header>
-    <!-- end header section -->
-    <!-- slider section -->
-    <section class="slider_section ">
-      <div id="customCarousel1" class="carousel slide" data-ride="carousel">
-        <div class="container">
-        
+      <header class="header_section">
+        <div class="container rounded-pill" id="bg2">
+          <nav class="navbar navbar-expand-lg custom_nav-container ">
+            <a class="navbar-brand" style="margin: 10px;" href="{{url_for('home')}}">
+              <span>
+                Sell me Tech
+              </span>
+            </a>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav">             
+                <li class="nav-item" style="margin-left: 100px; padding-top: 25px;">
+                  <a class="nav-link" href="{{url_for('index')}}">Home <span class="sr-only"></span></a>
+                </li>
+                <li class="nav-item" style="padding-top: 25px;">
+                  <a class="nav-link" href="{{url_for('about')}}"> About us</a>
+                </li>
+                <li class="nav-item" style="padding-top: 25px;">
+                  <a class="nav-link" href="{{url_for('contact')}}">Contact</a>
+                </li>
+                <li class="nav-item" style="padding-top: 25px;">
+                  <a class="nav-link" href="{{url_for('howtouse')}}">How to use</a>
+                </li>
+                <li class="nav-item" style="padding-top: 25px;">
+                  <a class="nav-link" href="{{url_for('userpage')}}">logged in as {{current_user.name}}</a>
+                </li>
+                <li>
+                  <a class="nav-link" href="{{url_for('userpage')}}"><img src="{{current_user.profile_pic}}" style="border-radius: 50%; width:75px;"></a>
+                </li>
+              </ul>
+            </div>
+          </nav>
         </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="container ">
-              <div class="row">
-                <div class="col-md-7 col-lg-6">
-                  <div class="detail-box">
-                    
-                      <div class="container">
-                        <h1 class="pushleftalittle" style="text-align: center;">
-                          ABOUT US
-                        </h1><br><br>
-                        <p style="font-size: larger;"> Sell me Tech is a website which provides an easy way to shop for any kinds of tech products online.
-                          Since there are many websites available which sell the same product with different 
-                          prices, "Sell me tech" website serves as a common platform to compare prices and their features. 
-                          This can therefore save time, provide abundant information about the product and also locate 
-                          product easily. Each page provides its own features. There is step-by-step instruction to use these 
-                          features by clicking on 'How To Use'. know more about recent technologies, news articles are also 
-                          available. This website is created with HTML, CSS and other technologies. This website was 
-                          developed by four developers as a course requirement mini project. The contact information of the 
-                          developers is given in the Contact Us' page. Technologies like python and JS in addition to 
-                          HTML and CSS to serves as the backbone of this project. </p>
-                        
-                        </div>
-                    
-                    
-                  </div>
-                </div>
-              </div>
+      </header>
+
+      <div class="container" style="margin-top: 5%; width: 50%;">
+        <h1 style="text-align: center;" class="text-white"> 
+          ABOUT US
+        </h1><br><br>
+        <p class="text-justify text-white" style="font-size: larger;"> Sell me Tech is a website which provides an easy way to shop for any kinds of tech products online.
+          Since there are many websites available which sell the same product with different 
+          prices, "Sell me tech" website serves as a common platform to compare prices and their features. 
+          This can therefore save time, provide abundant information about the product and also locate 
+          product easily. Each page provides its own features. There is step-by-step instruction to use these 
+          features by clicking on 'How To Use'. know more about recent technologies, news articles are also 
+          available. This website is created with HTML, CSS and other technologies. This website was 
+          developed by four developers as a course requirement mini project. The contact information of the 
+          developers is given in the Contact Us' page. Technologies like python and JS in addition to 
+          HTML and CSS to serves as the backbone of this project. 
+        </p>                            
+      </div>
+    </div>
+
+    <section class="info_section">
+      <div class="container">
+        <div class="row info_main_row">
+          <div class="col-md-4 info_col">
+            <h5>
+              About Us
+            </h5>
+            <p class="text-justify">
+              We are a team of 4 young aspiring developers making a website to learn about
+              the basics of HTML CSS and other relavent technologies. This web site was developed as a 
+              course requirement mini-project. We have used technologies like python and JS in addition to
+              HTML and CSS to service as the backbone of this project. 
+            </p>
+          </div>
+        
+          <div class="col-md-4 col-lg-3 mx-auto info_col" style="position: relative; left: 250px;">
+            <h5>
+              For any queries
+            </h5>
+            <div class="info_contact">
+              <a href="https://g.page/sjcbengaluru?share">
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                <span>
+                  Bangalore 560027
+                </span>
+              </a>
+              <a href="tel:080-2227-4079">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                <span>
+                  080-2227-4079
+                </span>
+              </a>
+              <a href="mailto:desk@sjc.ac.in">
+                <i class="fa fa-envelope"></i>
+                <span>
+                  desk@sjc.ac.in
+                </span>
+              </a>
+            </div>
+            <div class="social_box">
+              <a href="https://www.facebook.com/sjcbengaluru/">
+                <i class="fab fa-facebook" aria-hidden="true"></i>
+              </a>
+              <a href="https://twitter.com/sjcbengaluru?lang=en">
+                <i class="fab fa-twitter" aria-hidden="true"></i>
+              </a>
+              <a href="https://in.linkedin.com/school/sjcbengaluru/">
+                <i class="fab fa-linkedin" aria-hidden="true"></i>
+              </a>
+              <a href="https://www.instagram.com/sjcbengaluru/?hl=en">
+                <i class="fab fa-instagram" aria-hidden="true"></i>
+              </a>
             </div>
           </div>
-         
         </div>
       </div>
     </section>
-    <!-- end slider section -->
-  </div>
 
+    <script src="{{ url_for('static', filename='jquery-3.4.1.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='bootstrap.js') }}"></script>
+    <script src="{{ url_for('static', filename='custom.js') }}"></script>
 
-  <!-- end client section -->
-
-  <!-- info section -->
-  <section class="info_section">
-    <div class="container">
-      <div class="row info_main_row">
-        <div class="col-md-4 info_col">
-          <h5>
-            About Us
-          </h5>
-          <p>
-            We are a team of 4 young aspiring developers making a website to learn about
-            the basics of HTML CSS and other relavent technologies. This web site was developed as a 
-            course requirement mini-project. We have used technologies like python and JS in addition to
-            HTML and CSS to service as the backbone of this project. 
-          </p>
-        </div>
-       
-        <div class="col-md-4 col-lg-3 mx-auto info_col" style="position: relative; left: 250px;">
-          <h5>
-            For any queries
-          </h5>
-          <div class="info_contact">
-            <a href="#">
-              <i class="fa fa-map-marker" aria-hidden="true"></i>
-              <span>
-                Bangalore 560031
-              </span>
-            </a>
-            <a href="tel:01123456789">
-              <i class="fa fa-phone" aria-hidden="true"></i>
-              <span>
-                Call 080-526792
-              </span>
-            </a>
-            <a href="mailto:info@yourdomain.com">
-              <i class="fa fa-envelope"></i>
-              <span>
-                shashank200801@gmail.com
-              </span>
-            </a>
-          </div>
-          <div class="social_box">
-            <a href="https://www.sjc.ac.in/">
-              <i class="fab fa-facebook" aria-hidden="true"></i>
-            </a>
-            <a href="https://www.sjc.ac.in/">
-              <i class="fab fa-twitter" aria-hidden="true"></i>
-            </a>
-            <a href="https://www.sjc.ac.in/">
-              <i class="fab fa-linkedin" aria-hidden="true"></i>
-            </a>
-            <a href="https://www.sjc.ac.in/">
-              <i class="fab fa-instagram" aria-hidden="true"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- end info section -->
-
-  <!-- jQery -->
-  <script src="{{ url_for('static', filename='jquery-3.4.1.min.js') }}"></script>
-  <!-- popper js -->
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-  </script>
-  <!-- bootstrap js -->
-  <script src="{{ url_for('static', filename='bootstrap.js') }}"></script>
-  <!-- owl slider -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
-  </script>
-  <!-- custom js -->
-  <script src="{{ url_for('static', filename='custom.js') }}"></script>
-  <!-- Google Map -->
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
-  </script>
-  <!-- End Google Map -->
-
-</body>
+  </body>
 
 </html>

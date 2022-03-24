@@ -13,41 +13,28 @@
   <meta name="author" content="" />
   <link rel="shortcut icon" href="images/favicon.png" type="">
 
-  <title> Sell me cell </title>
-
+  <title> Sell me Tech </title>
 
   <!-- bootstrap core css -->
   <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='bootstrap.css') }}" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
   <!--owl slider stylesheet -->
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
-
-  <!-- font awesome style -->
-  <!-- <link href="{{ url_for('static', filename='font-awesome.min.css') }}" rel="stylesheet" /> -->
-  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 
   <!-- Custom styles for this template -->
   <link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet" />
   <link href="{{ url_for('static', filename='style1.css') }}" rel="stylesheet" />
+  <link href="{{ url_for('static', filename='style2.css') }}" rel="stylesheet" />
+
   <!-- responsive style -->
   <link href="{{ url_for('static', filename='responsive.css') }}" rel="stylesheet" />
-  
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='bootstrap.css') }}" />
-
-  <!--owl slider stylesheet -->
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
 
   <!-- font awesome style -->
-  <link href="{{ url_for('static', filename='font-awesome.min.css') }}" rel="stylesheet" />
-
-  <!-- Custom styles for this template -->
-  <link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet" />
-  <!-- <link href="{{ url_for('static', filename='style2.css') }}" rel="stylesheet" /> -->
-  <!-- responsive style -->
-  <link href="{{ url_for('static', filename='responsive.css') }}" rel="stylesheet" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <link rel="stylesheet" href="{{ url_for('static', filename='style2.css') }}" >
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  
+  <!-- Bootstrap Js -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -62,7 +49,7 @@
         <nav class="navbar navbar-expand-lg custom_nav-container ">
           <a class="navbar-brand" style="margin: 10px;" href="{{url_for('home')}}">
             <span>
-              Sell me cell
+              Sell me Tech
             </span>
           </a>
 
@@ -95,10 +82,12 @@
     <!-- end header section -->
     <!-- slider section -->
 
-    <div class="container" style="width: 40%; margin-top:9%;">
+    <div class="container" style="width: 40%; margin-top:5%;">
       
       <h2>Login Page</h2><br> 
-      <div class='g-sign-in-button' style="position: relative; left: 200px; bottom: 25px;">
+      <div class="row mx-auto text-center">
+        <div class="col">
+      <div class='g-sign-in-button' style="bottom: 25px;">
         <div class=content-wrapper>
             <div class='logo-wrapper'>
               <a class="button" href="{{url_for('loginG')}}">
@@ -109,6 +98,8 @@
             
         </div>
     </div>
+        </div>
+      </div>
   
       
     <br><br>
@@ -118,13 +109,13 @@
           <form id="login" method="post" >
               <label>
                   <b>
-                      User Name
+                      Email
                   </b>
               </label>            
               
             </div>
               <div class="col"> 
-                <input type="text" class="rounded-pill" name="Uname" id="Uname" placeholder="Username" onclick="admin_alert()">                                                         
+                <input type="text" class="rounded-pill" name="Uname" id="Uname" placeholder="Email" onclick="admin_alert()">                                                         
             </div>                      
         </div>  
         <br>
@@ -156,7 +147,7 @@
           <h5>
             About Us
           </h5>
-          <p>
+          <p class="text-justify">
             We are a team of 4 young aspiring developers making a website to learn about
             the basics of HTML CSS and other relavent technologies. This web site was developed as a 
             course requirement mini-project. We have used technologies like python and JS in addition to

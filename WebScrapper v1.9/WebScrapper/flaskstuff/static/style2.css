@@ -1,12 +1,14 @@
 @import url(https://fonts.googleapis.com/css?family=Sofia);
 @import url(https://fonts.googleapis.com/css2?family=Comforter+Brush&display=swap);
 @import url(https://fonts.googleapis.com/css2?family=Satisfy&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Raleway:wght@200;400&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap);
 
   p {
-    font-family: "Sofia", sans-serif;
+    font-family: "Raleway", sans-serif;
   }
 
-  h3 {
+  #f1 {
     font-family: "Sofia", sans-serif;
   }
 
@@ -20,7 +22,6 @@
 
   a:link {
     text-decoration: none;
-    color: black;
     font-weight: bold;
     vertical-align: middle;
   }
@@ -42,12 +43,12 @@
     font-size: larger;
   }
 
-  li {
+  #tBlack {
     color: black;
   }
 
-  #tBlack {
-    color: black;
+  #tWhite {
+    color: white;
   }
   
   #GradientBlueBG {
@@ -61,4 +62,8 @@
 
   #bg2 {
     background: rgba(0,0,0,0.25);
+  }
+
+  #bg3 {
+    background: rgba(76, 89, 94);
   }
